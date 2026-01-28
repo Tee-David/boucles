@@ -1,0 +1,109 @@
+/* App-specific styles for Neo-Brutalist Design */
+
+/* Ensure smooth transforms */
+.will-change-transform {
+  will-change: transform;
+}
+
+/* Section transitions */
+section {
+  backface-visibility: hidden;
+}
+
+/* Brutalist button hover lift */
+.brutal-btn {
+  transition: all 0.15s ease-out;
+}
+
+.brutal-btn:hover {
+  transform: translateY(-4px);
+}
+
+/* Brutalist card hover */
+.brutal-card {
+  transition: all 0.15s ease-out;
+}
+
+.brutal-card:hover {
+  transform: translateY(-8px);
+  border-color: #FF4D2E;
+}
+
+/* Image hover effects */
+.group:hover img {
+  will-change: transform;
+}
+
+/* Form focus states */
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #FF4D2E;
+}
+
+/* Mobile optimizations */
+@media (max-width: 768px) {
+  .section-pinned {
+    min-height: 100vh;
+    min-height: 100dvh;
+  }
+  
+  .hero-headline-block {
+    width: 88vw !important;
+    left: 6vw !important;
+  }
+  
+  .hero-headline span {
+    font-size: clamp(32px, 8vw, 52px) !important;
+  }
+  
+  .wwd-card {
+    height: auto !important;
+    min-height: 30vh;
+  }
+  
+  .testimonial-card {
+    width: 100% !important;
+  }
+  
+  .team-card {
+    width: 100% !important;
+  }
+  
+  .stat-block {
+    width: 50% !important;
+    margin-bottom: 2rem;
+  }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Typography enhancements */
+.font-grotesk {
+  font-feature-settings: "ss01" on, "ss02" on;
+}
+
+/* Sticker-like shadow effect */
+.shadow-brutal {
+  box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.9);
+}
+
+/* Hard edges everywhere */
+* {
+  border-radius: 0 !important;
+}
+
+/* Selection color */
+::selection {
+  background-color: #FF4D2E;
+  color: #F7F7F5;
+}

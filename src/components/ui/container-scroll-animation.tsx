@@ -27,7 +27,7 @@ export const ContainerScroll = ({
   }, []);
 
   const scaleDimensions = () => {
-    return isMobile ? [0.8, 1.1] : [0.9, 1.25];
+    return isMobile ? [0.8, 1.05] : [0.9, 1.25];
   };
 
   const rotate = useTransform(scrollYProgress, [0, 1], [20, 0]);
@@ -36,7 +36,7 @@ export const ContainerScroll = ({
 
   return (
     <div
-      className="h-[60rem] md:h-[80rem] flex items-center justify-center relative p-2 md:p-20"
+      className="h-[60rem] md:h-[80rem] flex items-center justify-center relative px-6 py-10 md:p-20"
       ref={containerRef}
     >
       <div

@@ -120,7 +120,7 @@ export default function Home() {
                 <div className="w-full grid grid-cols-1 lg:grid-cols-2 items-center">
 
                     {/* Left: Design & Strategy */}
-                    <div className="flex flex-col justify-center px-6 md:px-16 lg:px-24 py-12 md:py-16 lg:py-24 relative overflow-hidden order-2 lg:order-1">
+                    <div className="flex flex-col justify-center items-center text-center md:items-start md:text-left px-6 md:px-16 lg:px-24 py-12 md:py-16 lg:py-24 relative overflow-hidden order-2 lg:order-1">
 
                         <div className="mb-12 w-full max-w-xl">
                             <Marquee>
@@ -136,9 +136,9 @@ export default function Home() {
                             </Marquee>
                         </div>
 
-                        <div className="mb-10 font-archivo flex flex-col gap-4 md:gap-8"> {/* Adjusted gap */}
+                        <div className="mb-10 font-archivo flex flex-col gap-4 md:gap-8 w-full"> {/* Adjusted gap */}
                             <span className="text-3xl md:text-5xl font-black text-ink tracking-tighter">WE DESIGN</span>
-                            <div className="h-20">
+                            <div className="h-20 flex justify-center md:justify-start"> {/* Center Flip Text on mobile */}
                                 <LayoutTextFlip
                                     text=""
                                     words={["ENGAGEMENT", "EXPERIENCES", "STRATEGY", "IMPACT"]}
@@ -147,7 +147,7 @@ export default function Home() {
                             </div>
                         </div>
 
-                        <div className="mb-8 md:mb-16 max-w-2xl text-left"> {/* Reduced margin bottom on mobile */}
+                        <div className="mb-8 md:mb-16 max-w-2xl text-center md:text-left"> {/* Description alignment */}
                             <p className="text-xl md:text-2xl text-ink/80 leading-relaxed font-outfit">
                                 We span the realms of digital, physical, and immersive experiences, connecting brands with their audiences in meaningful ways.
                             </p>

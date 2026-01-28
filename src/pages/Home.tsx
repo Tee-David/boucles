@@ -153,11 +153,11 @@ export default function Home() {
                             </p>
                         </div>
 
-                        <div className="flex flex-col sm:flex-row gap-4 md:gap-6"> {/* Stack buttons on tiny screens if needed, otherwise row */}
-                            <Link to="/contact" className="brutal-btn-coral flex items-center justify-center gap-3 px-5 py-3 text-base md:px-8 md:py-4 md:text-lg">
+                        <div className="flex flex-col sm:flex-row gap-4 md:gap-6 w-full"> {/* Stack buttons on tiny screens if needed, otherwise row */}
+                            <Link to="/contact" className="brutal-btn-coral w-full md:w-auto flex items-center justify-center gap-3 px-5 py-3 text-base md:px-8 md:py-4 md:text-lg">
                                 Start a Project <ArrowRight className="w-5 h-5 md:w-6 md:h-6 ml-2" />
                             </Link>
-                            <button className="brutal-btn bg-transparent border-ink text-ink hover:bg-ink hover:text-paper flex items-center justify-center gap-3 px-5 py-3 text-base md:px-8 md:py-4 md:text-lg">
+                            <button className="brutal-btn w-full md:w-auto bg-transparent border-ink text-ink hover:bg-ink hover:text-paper flex items-center justify-center gap-3 px-5 py-3 text-base md:px-8 md:py-4 md:text-lg">
                                 <Play className="w-5 h-5 md:w-6 md:h-6 mr-2" /> Showreel
                             </button>
                         </div>

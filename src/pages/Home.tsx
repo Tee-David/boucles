@@ -116,11 +116,11 @@ export default function Home() {
             {/* ═══════════════════════════════════════════════════════════════════
           HERO SECTION
           ═══════════════════════════════════════════════════════════════════ */}
-            <section ref={heroRef} className="relative min-h-screen flex items-center border-b-3 border-ink overflow-hidden bg-paper">
+            <section ref={heroRef} className="relative min-h-[85vh] md:min-h-screen flex items-center border-b-3 border-ink overflow-hidden bg-paper">
                 <div className="w-full grid grid-cols-1 lg:grid-cols-2 items-center">
 
                     {/* Left: Design & Strategy */}
-                    <div className="flex flex-col justify-center px-8 md:px-16 lg:px-24 py-16 lg:py-24 relative overflow-hidden order-2 lg:order-1">
+                    <div className="flex flex-col justify-center px-6 md:px-16 lg:px-24 py-12 md:py-16 lg:py-24 relative overflow-hidden order-2 lg:order-1">
 
                         <div className="mb-12 w-full max-w-xl">
                             <Marquee>
@@ -136,7 +136,7 @@ export default function Home() {
                             </Marquee>
                         </div>
 
-                        <div className="mb-10 font-archivo flex flex-col gap-8"> {/* Increased gap for more spacing */}
+                        <div className="mb-10 font-archivo flex flex-col gap-4 md:gap-8"> {/* Adjusted gap */}
                             <span className="text-3xl md:text-5xl font-black text-ink tracking-tighter">WE DESIGN</span>
                             <div className="h-20">
                                 <LayoutTextFlip
@@ -147,18 +147,18 @@ export default function Home() {
                             </div>
                         </div>
 
-                        <div className="mb-16 max-w-2xl text-left">
+                        <div className="mb-8 md:mb-16 max-w-2xl text-left"> {/* Reduced margin bottom on mobile */}
                             <p className="text-xl md:text-2xl text-ink/80 leading-relaxed font-outfit">
                                 We span the realms of digital, physical, and immersive experiences, connecting brands with their audiences in meaningful ways.
                             </p>
                         </div>
 
-                        <div className="flex gap-6">
-                            <Link to="/contact" className="brutal-btn-coral flex items-center gap-3 px-8 py-4 text-lg">
-                                Start a Project <ArrowRight className="w-6 h-6 ml-2" />
+                        <div className="flex flex-col sm:flex-row gap-4 md:gap-6"> {/* Stack buttons on tiny screens if needed, otherwise row */}
+                            <Link to="/contact" className="brutal-btn-coral flex items-center justify-center gap-3 px-5 py-3 text-base md:px-8 md:py-4 md:text-lg">
+                                Start a Project <ArrowRight className="w-5 h-5 md:w-6 md:h-6 ml-2" />
                             </Link>
-                            <button className="brutal-btn bg-transparent border-ink text-ink hover:bg-ink hover:text-paper flex items-center gap-3 px-8 py-4 text-lg">
-                                <Play className="w-6 h-6 mr-2" /> Showreel
+                            <button className="brutal-btn bg-transparent border-ink text-ink hover:bg-ink hover:text-paper flex items-center justify-center gap-3 px-5 py-3 text-base md:px-8 md:py-4 md:text-lg">
+                                <Play className="w-5 h-5 md:w-6 md:h-6 mr-2" /> Showreel
                             </button>
                         </div>
                     </div>

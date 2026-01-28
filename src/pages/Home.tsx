@@ -120,7 +120,7 @@ export default function Home() {
                 <div className="w-full grid grid-cols-1 lg:grid-cols-2 items-center">
 
                     {/* Left: Design & Strategy */}
-                    <div className="flex flex-col justify-center px-8 md:px-16 lg:px-24 py-16 lg:py-24 relative overflow-hidden">
+                    <div className="flex flex-col justify-center px-8 md:px-16 lg:px-24 py-16 lg:py-24 relative overflow-hidden order-2 lg:order-1">
 
                         <div className="mb-12 w-full max-w-xl">
                             <Marquee>
@@ -166,7 +166,7 @@ export default function Home() {
 
 
                     {/* Right: Webcam Pixel Grid Effect */}
-                    <div className="relative h-full min-h-[500px] bg-paper flex items-center justify-center p-4 md:p-8 lg:pr-16"> {/* Changed bg-black to bg-paper */}
+                    <div className="relative h-full min-h-[500px] bg-paper flex items-center justify-center p-4 md:p-8 lg:pr-16 order-1 lg:order-2"> {/* Changed bg-black to bg-paper */}
                         <div className="relative w-full h-full rounded-[2rem] overflow-hidden border-4 border-ink shadow-2xl"> {/* Added rounding container */}
                             <WebcamPixelGrid
                                 gridCols={40}
@@ -205,7 +205,7 @@ export default function Home() {
                         <>
                             <h1 className="text-4xl font-semibold text-ink dark:text-white">
                                 Unleash the power of <br />
-                                <span className="text-4xl md:text-[6rem] font-bold mt-1 leading-none font-archivo text-coral">
+                                <span className="text-4xl md:text-6xl lg:text-[6rem] font-bold mt-1 leading-none font-archivo text-coral">
                                     Strategic Design
                                 </span>
                             </h1>
@@ -334,7 +334,7 @@ export default function Home() {
             {/* ═══════════════════════════════════════════════════════════════════
           STATS SECTION
           ═══════════════════════════════════════════════════════════════════ */}
-            <div className="relative h-[60vh] min-h-[500px] w-full overflow-hidden bg-ink border-y-3 border-ink flex items-center justify-center">
+            <div className="relative h-auto min-h-[500px] md:h-[60vh] w-full bg-ink border-y-3 border-ink flex items-center justify-center py-16 md:py-0">
                 <AnimatedBubbleParticles
                     particleColor="#FF5E3A" // Coral particles requesting via hex
                     backgroundColor="#1a1a1a" // Dark bg

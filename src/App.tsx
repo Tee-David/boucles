@@ -36,7 +36,7 @@ function App() {
   if (loading) {
     return (
       <div className="h-screen w-full flex items-center justify-center" style={{ backgroundColor: '#FFBD59' }}>
-        <img src="/preloader.gif" alt="Loading..." className="w-[600px] h-[600px] object-contain" />
+        <img src="/preloader.gif" alt="Loading..." className="w-[80vw] h-[80vw] md:w-[600px] md:h-[600px] object-contain" />
       </div>
     );
   }

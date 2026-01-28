@@ -98,7 +98,7 @@ export default function About() {
             </section>
 
             {/* Grid Section */}
-            <section className="py-20 h-screen w-full bg-cream border-b-3 border-ink">
+            <section className="py-20 min-h-screen w-full bg-cream border-b-3 border-ink">
                 <LayoutGrid cards={cards} />
             </section>
 

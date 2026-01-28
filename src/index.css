@@ -134,7 +134,7 @@
   }
 
   .brutal-btn {
-    @apply px-8 py-4 font-archivo uppercase tracking-wide;
+    @apply px-5 py-3 md:px-8 md:py-4 font-archivo uppercase tracking-wide;
     background: var(--ink);
     color: var(--paper);
     border: 3px solid var(--ink);
@@ -154,7 +154,7 @@
   }
 
   .brutal-btn-coral {
-    @apply px-8 py-4 font-archivo uppercase tracking-wide;
+    @apply px-5 py-3 md:px-8 md:py-4 font-archivo uppercase tracking-wide;
     background: var(--coral);
     color: white;
     border: 3px solid var(--ink);
@@ -169,7 +169,7 @@
   }
 
   .brutal-btn-outline {
-    @apply px-8 py-4 font-archivo uppercase tracking-wide;
+    @apply px-5 py-3 md:px-8 md:py-4 font-archivo uppercase tracking-wide;
     background: transparent;
     color: var(--ink);
     border: 3px solid var(--ink);
